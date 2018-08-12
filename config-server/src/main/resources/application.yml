@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/liangxianning/spring-cloud-config.git  #github上的项目路径
+          search-paths: module-config  #项目下的文件夹路径
+  application:
+      name: config-server
+server:
+    port: 9092 #启动端口
